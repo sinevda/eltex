@@ -172,7 +172,7 @@ const char* getFileName(const char* path) {
 }
 
 const char* remove_filename(const char *path) {
-    static char temp[MAXPACKET]; // Используем статический массив для возврата
+    static char temp[MAXPACKET];
     strcpy(temp, path);
     char *last_slash = strrchr(temp, '/');
     
